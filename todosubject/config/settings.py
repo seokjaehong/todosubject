@@ -17,7 +17,16 @@ from .secret_key import SECRET_KEY
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
+<<<<<<< HEAD
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_URL = '/media/'
+=======
+STATIC_URL = '/.static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_URL = '/.media/'
+>>>>>>> 9d800abd2c45d901e8788f710bbb3d0cb8473384
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -77,7 +86,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todo_subject',
+        'NAME': 'todosubject',
         'USER': 'hong',
         'PASSWORD': 'tjrwo123',
         'HOST': '127.0.0.1',
@@ -118,9 +127,3 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
-STATIC_URL = '/.static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# print(ROOT_DIR)
-# print(BASE_DIR)
-print(STATIC_ROOT)

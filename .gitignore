@@ -5,6 +5,7 @@ __pycache__/*
 /.static
 /static
 static/*
+static/
 
 venv/
 
