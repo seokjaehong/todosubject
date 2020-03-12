@@ -20,9 +20,8 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 
-app_name = 'todo_main'
+app_name = 'todo_board'
 
 urlpatterns = [
     url(r'^$', views.todo_board.as_view(), name='todo_board'),
-
 ]
